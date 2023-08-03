@@ -618,6 +618,7 @@ class BetterPlayerController {
       _postControllerEvent(BetterPlayerControllerEvent.openFullscreen);
     } else {
       _postControllerEvent(BetterPlayerControllerEvent.hideFullscreen);
+      _postControllerEvent(BetterPlayerControllerEvent.hideFullscreenManually);
     }
   }
 
