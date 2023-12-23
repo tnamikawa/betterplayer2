@@ -6,7 +6,6 @@ import 'package:better_player/src/configuration/better_player_controller_event.d
 import 'package:better_player/src/core/better_player_utils.dart';
 import 'package:better_player/src/subtitles/better_player_subtitle.dart';
 import 'package:better_player/src/subtitles/better_player_subtitles_factory.dart';
-import 'package:better_player/src/video_player/video_player.dart';
 import 'package:better_player/src/video_player/video_player_platform_interface.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
