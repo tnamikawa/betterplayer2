@@ -322,6 +322,10 @@ bool _remoteCommandsInitialized = false;
 #endif
     } else {
         NSDictionary* argsMap = call.arguments;
+        if (![argsMap[@"textureId"] isKindOfClass:[NSNumber class]]) {
+//            NSLog(@"FlutterTextureMessageCodec::decode::argsMap[\"textureId\"] is not a NSNumber");
+            return;
+        }
         int64_t textureId = ((NSNumber*)argsMap[@"textureId"]).unsignedIntegerValue;
         BetterPlayer* player = _players[@(textureId)];
         if ([@"setDataSource" isEqualToString:call.method]) {
