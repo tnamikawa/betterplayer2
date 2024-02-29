@@ -133,7 +133,7 @@ bool _remoteCommandsInitialized = false;
 
 - (void) setRemoteCommandsNotificationNotActive{
     if ([_players count] == 0) {
-        [[AVAudioSession sharedInstance] setActive:false error:nil];
+//        [[AVAudioSession sharedInstance] setActive:false error:nil];
     }
 
     [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
