@@ -401,7 +401,7 @@ bool _remoteCommandsInitialized = false;
                 }
             });
             if ([_players count] == 0) {
-                [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+//                [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
             }
             result(nil);
         } else if ([@"setLooping" isEqualToString:call.method]) {
